@@ -1,0 +1,50 @@
+:root {
+  /* Paleta do design system: primárias, secundárias e neutras */
+  --color-primary: #176b55;
+  --color-primary-dark: #10513f;
+  --color-primary-light: #e3f3ed;
+  --color-secondary: #f2b84b;
+  --color-secondary-dark: #c88919;
+  --color-accent: #e97855;
+  --color-blue: #4779c7;
+  --color-purple: #8266b2;
+  --color-success: #27865b;
+  --color-warning: #b7791f;
+  --color-danger: #c74747;
+  --color-ink: #172a25;
+  --color-text: #52635d;
+  --color-muted: #819089;
+  --color-border: #dfe8e3;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f5f8f6;
+  --color-dark: #102b23;
+  --color-white: #ffffff;
+  --font-body: "DM Sans", Arial, sans-serif;
+  --font-heading: "Manrope", Arial, sans-serif;
+  /* Escala tipográfica: 12, 14, 16, 18, 20, 24, 32, 40, 52, 64px */
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.25rem;
+  --text-6xl: 4rem;
+  /* Espaçamento modular baseado em múltiplos de 8px */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 4px 16px rgb(16 43 35 / 6%);
+  --shadow-md: 0 16px 40px rgb(16 43 35 / 10%);
+  --container: 1160px;
+  --transition: 180ms ease;
+}
