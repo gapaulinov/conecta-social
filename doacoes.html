@@ -1,6 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Apoie projetos sociais com sua doação."><title>Doações | Conecta Social</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css"><script src="js/main.js" defer></script></head>
-<body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>conecta<span class="brand-light">social</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button><nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a class="nav-link" href="index.html">Início</a><div class="nav-dropdown"><a class="nav-link" href="projetos.html">Projetos <span>⌄</span></a><div class="dropdown-menu"><a href="projetos.html#educacao">Educação</a><a href="projetos.html#meio-ambiente">Meio ambiente</a><a href="projetos.html#assistencia">Assistência social</a></div></div><a class="nav-link" href="voluntariado.html">Voluntariado</a><a class="nav-link active" href="doacoes.html">Doações</a><a class="btn btn-primary nav-cta" href="doacoes.html">Quero ajudar ↗</a></nav></div></header>
-<main id="conteudo"><section class="page-hero"><div class="container"><span class="eyebrow">Sua generosidade gera impacto</span><h1>Doe hoje. Transforme <span>o amanhã.</span></h1><p>Escolha um valor e ajude iniciativas sociais a continuarem chegando a quem mais precisa.</p></div></section><section class="section section-soft"><div class="container donation-layout"><div class="donation-copy"><img class="donation-image" src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=80" alt="Equipe de voluntários em ação"><h2>Todo gesto conta.</h2><p>Sua contribuição apoia materiais educativos, ações ambientais e assistência a famílias. Nesta versão acadêmica, o formulário simula a experiência e não processa pagamentos reais.</p><div class="trust-note"><span>✓</span><p><strong>Transparência importa</strong><br>Acompanhe os resultados e o destino dos recursos nos projetos.</p></div></div>
-<form class="form-card donation-form js-demo-form" data-success="Obrigado pelo interesse em doar! Esta demonstração não realizou cobrança."><div class="form-card-heading"><h2>Faça sua contribuição</h2><p>Escolha como deseja apoiar.</p></div><fieldset class="donation-fieldset"><legend>Frequência da doação</legend><div class="segmented-options"><label><input type="radio" name="frequencia" value="Única" checked><span>Uma vez</span></label><label><input type="radio" name="frequencia" value="Mensal"><span>Mensal</span></label></div></fieldset><fieldset class="donation-fieldset"><legend>Selecione um valor</legend><div class="amount-grid"><label><input type="radio" name="valor" value="25" required><span>R$ 25</span></label><label><input type="radio" name="valor" value="50"><span>R$ 50</span></label><label><input type="radio" name="valor" value="100"><span>R$ 100</span></label><label><input type="radio" name="valor" value="200"><span>R$ 200</span></label></div></fieldset><div class="field"><label for="valor-livre">Ou informe outro valor (R$)</label><input id="valor-livre" name="valor-livre" type="number" min="1" step="0.01" placeholder="Ex.: 75,00"></div><div class="field"><label for="donor-name">Seu nome *</label><input id="donor-name" name="nome" type="text" placeholder="Nome completo" required minlength="3"></div><div class="field"><label for="donor-email">Seu e-mail *</label><input id="donor-email" name="email" type="email" placeholder="voce@email.com" required></div><button class="btn btn-primary btn-lg btn-block" type="submit">Continuar contribuição <span>→</span></button><p class="form-note">Ambiente demonstrativo: não insira dados bancários ou de cartão.</p><div class="form-feedback" hidden></div></form></div></section></main>
-<footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">C</span><span>conecta<span class="brand-light">social</span></span></a><p>Conectando pessoas, causas e oportunidades para transformar realidades.</p></div><div class="footer-col"><h3>Explore</h3><a href="projetos.html">Projetos</a><a href="voluntariado.html">Voluntariado</a><a href="doacoes.html">Doações</a></div><div class="footer-col"><h3>Contato</h3><a href="mailto:contato@conectasocial.org.br">contato@conectasocial.org.br</a><span>São Paulo, Brasil</span></div></div><div class="container footer-bottom"><span>© 2026 Conecta Social. Projeto acadêmico demonstrativo.</span><span>Feito com propósito ♡</span></div></footer><div class="toast" role="status" aria-live="polite" id="toast"></div></body></html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apoie projetos sociais com sua doação.">
+    <title>Doações | Conecta Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="brand" href="index.html"><span
+                    class="brand-mark">C</span><span>conecta<span class="brand-light">social</span></span></a><button
+                class="menu-toggle" aria-expanded="false" aria-controls="main-nav"
+                aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            <nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a class="nav-link"
+                    href="index.html">Início</a>
+                <div class="nav-dropdown"><a class="nav-link" href="projetos.html">Projetos <span>⌄</span></a>
+                    <div class="dropdown-menu"><a href="projetos.html#educacao">Educação</a><a
+                            href="projetos.html#meio-ambiente">Meio ambiente</a><a
+                            href="projetos.html#assistencia">Assistência social</a></div>
+                </div><a class="nav-link" href="voluntariado.html">Voluntariado</a><a class="nav-link active"
+                    href="doacoes.html">Doações</a><a class="btn btn-primary nav-cta" href="doacoes.html">Quero ajudar
+                    ↗</a>
+            </nav>
+        </div>
+    </header>
+    <main id="conteudo">
+        <section class="page-hero">
+            <div class="container"><span class="eyebrow">Sua generosidade gera impacto</span>
+                <h1>Doe hoje. Transforme <span>o amanhã.</span></h1>
+                <p>Escolha um valor e ajude iniciativas sociais a continuarem chegando a quem mais precisa.</p>
+            </div>
+        </section>
+        <section class="section section-soft">
+            <div class="container donation-layout">
+                <div class="donation-copy"><img class="donation-image"
+                        src="img/photo-1469571486292-0ba58a3f068b.jpg"
+                        alt="Equipe de voluntários em ação">
+                    <h2>Todo gesto conta.</h2>
+                    <p>Sua contribuição apoia materiais educativos, ações ambientais e assistência a famílias. Nesta
+                        versão acadêmica, o formulário simula a experiência e não processa pagamentos reais.</p>
+                    <div class="trust-note"><span>✓</span>
+                        <p><strong>Transparência importa</strong><br>Acompanhe os resultados e o destino dos recursos
+                            nos projetos.</p>
+                    </div>
+                </div>
+                <form class="form-card donation-form js-demo-form"
+                    data-success="Obrigado pelo interesse em doar! Esta demonstração não realizou cobrança.">
+                    <div class="form-card-heading">
+                        <h2>Faça sua contribuição</h2>
+                        <p>Escolha como deseja apoiar.</p>
+                    </div>
+                    <fieldset class="donation-fieldset">
+                        <legend>Frequência da doação</legend>
+                        <div class="segmented-options"><label><input type="radio" name="frequencia" value="Única"
+                                    checked><span>Uma vez</span></label><label><input type="radio" name="frequencia"
+                                    value="Mensal"><span>Mensal</span></label></div>
+                    </fieldset>
+                    <fieldset class="donation-fieldset">
+                        <legend>Selecione um valor</legend>
+                        <div class="amount-grid"><label><input type="radio" name="valor" value="25" required><span>R$
+                                    25</span></label><label><input type="radio" name="valor" value="50"><span>R$
+                                    50</span></label><label><input type="radio" name="valor" value="100"><span>R$
+                                    100</span></label><label><input type="radio" name="valor" value="200"><span>R$
+                                    200</span></label></div>
+                    </fieldset>
+                    <div class="field"><label for="valor-livre">Ou informe outro valor (R$)</label><input
+                            id="valor-livre" name="valor-livre" type="number" min="1" step="0.01"
+                            placeholder="Ex.: 75,00"></div>
+                    <div class="field"><label for="donor-name">Seu nome *</label><input id="donor-name" name="nome"
+                            type="text" placeholder="Nome completo" required minlength="3"></div>
+                    <div class="field"><label for="donor-email">Seu e-mail *</label><input id="donor-email" name="email"
+                            type="email" placeholder="voce@email.com" required></div><button
+                        class="btn btn-primary btn-lg btn-block" type="submit">Continuar contribuição
+                        <span>→</span></button>
+                    <p class="form-note">Ambiente demonstrativo: não insira dados bancários ou de cartão.</p>
+                    <div class="form-feedback" hidden></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span
+                        class="brand-mark">C</span><span>conecta<span class="brand-light">social</span></span></a>
+                <p>Conectando pessoas, causas e oportunidades para transformar realidades.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3><a href="projetos.html">Projetos</a><a href="voluntariado.html">Voluntariado</a><a
+                    href="doacoes.html">Doações</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3><a href="mailto:contato@conectasocial.org.br">contato@conectasocial.org.br</a><span>São
+                    Paulo, Brasil</span>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span>© 2026 Conecta Social. Projeto acadêmico
+                demonstrativo.</span><span>Feito com propósito ♡</span></div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite" id="toast"></div>
+</body>
+
+</html>
